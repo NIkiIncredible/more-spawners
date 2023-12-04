@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "more_spawners:block/diamond_spawner"
+    }
+  }
+}

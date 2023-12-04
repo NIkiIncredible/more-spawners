@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "more_spawners",
+	"version": "${version}",
+	"name": "More Spawners",
+	"description": "Adds 3 more spawners with different ranges and speeds to the game.",
+	"authors": [
+		"DasNiklas"
+	],
+	"contact": {
+		"sources": "https://github.com/NIkiIncredible/more-spawners"
+	},
+	"license": "MIT",
+	"icon": "assets/more_spawners/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "de.nehlen.dungeons.more_spawners.MoreSpawners"
+		],
+		"client": [
+			"de.nehlen.dungeons.more_spawners.client.MoreSpawnersClient"
+		],
+		"fabric-datagen": [
+			"de.nehlen.dungeons.more_spawners.MoreSpawnersDataGenerator"
+		]
+	},
+	"mixins": [
+		"more_spawners.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/wV5wprdJKk"
+			}
+		}
+	}
+}
